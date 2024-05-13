@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Peter Schmit</title>
+<link rel="stylesheet" href="styles.css">
+<script src="tabs.js"></script>
+</head>
+<body>
+    <div class="in light">
+        <h1>Peter Schmit</h1>
+        <div>
+            <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
+            <button class="tablinks" onclick="openTab(event, 'Work')">Work</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+        </div>
+    </div>
+    <div id="About" class="in dark tabcontent">
+        <img src="media/headshot.jpeg" width=15%>
+        <p>
+            Peter Schmit is a composer and multimedia artist from Lincoln, Nebraska.  He is currently studying Emerging Media Arts, with minors in Music Technology and Computer Science, at the University of Nebraska-Lincoln.
+        </p>
+    </div>
+    <div id="Work" class="in dark tabcontent">
+        <div id="perseverator">
+            <h2>Perseverator</h2>
+            <img src="media/PERSEVERATOR.jpg" style="width:20%">
+            <p>An experimental, dark ambient/noise EP made in Spring 2024.<br>
+                <a href="https://perseverator.bandcamp.com/">Bandcamp</a> here.</p>
+        </div>
+        <div id="bicycle">
+            <h2>bicycle</h2>
+            <p>Installed at EMA Open Studios in May 2023</p>
+            <video width="15%" controls src="media/bikeVideo1.mov"></video>
+            <video width="15%" controls src="media/bikeVideo2.mov"></video>
+            <p>An interactive installation combining physical elements, video projection, and music.  Audiences control the playback speed and direction of an ambient music piece using bike pedals and a potentiometer, respectively.</p>
+            <p>I created the ambient music (listen below) in Logic Pro using a seven-string guitar in an altered tuning.  I filmed the footage in my backyard, and programmed the interactions in the Arduino IDE and p5.js.</p>
+            <audio controls src="media/bicycleAudio.wav"></audio>
+        </div>
+    </div>
+    <div id="Contact" class="in dark tabcontent">
+        <p>Email: <a href="mailto:peternschmit@gmail.com">peternschmit@gmail.com</a></p>
+        <p>LinkedIn <a href="http://www.linkedin.com/in/peter-schmit-745205309">here</a>.</p>
+    </div>
+</body>
+
+<!--on page load, display "About" tab-->
+<script>
+    document.getElementById("defaultOpen").click();
+</script>
+</html>

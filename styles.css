@@ -1,0 +1,45 @@
+body {
+    font-family: Geneva, Tahoma, sans-serif;
+}
+h1 {
+    padding-top: 0.4em;
+    font-size: 3em;
+    text-align: center;
+}
+h2 {
+    padding-top: 0.4em;
+    font-size: 2em;
+}
+p {
+    font-size: 1.5em;
+    margin: 1em;
+    padding-inline: 10em;
+    padding-bottom: 1em;
+}
+img {
+    padding-top: 0.75%;
+}
+div {
+    padding-top: 0.05%;
+    text-align: center;
+}
+button {
+    background-color: azure;
+    font-size: 1.3em;
+    padding: 0.75em;
+    margin: 0.5em;
+    border: none;
+}
+.tabcontent {
+    margin-top: 0.75%;
+}
+.light {
+    background-color: aliceblue;
+}
+.dark {
+    background-color: rgb(207, 228, 247);
+}
+.in {
+    margin-left: 5%;
+    margin-right: 5%;
+}
