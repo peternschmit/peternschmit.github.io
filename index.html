@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Peter Schmit</title>
-<link rel="stylesheet" href="styles.css">
-<script src="tabs.js"></script>
+	<meta name="viewport" content="width-device-width, initial-scale=1"/>
+	<title>Peter Schmit</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="tabs.js"></script>
 </head>
+
 <body>
-    <div class="in light">
-        <h1>Peter Schmit</h1>
-        <div>
+
+<div class="in light">
+    <h1>Peter Schmit</h1>
+		<div>
             <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
             <button class="tablinks" onclick="openTab(event, 'Work')">Work</button>
             <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
         </div>
-    </div>
-    <div id="About" class="in dark tabcontent">
-        <img src="media/headshot.jpeg" width=15%>
+</div>
+    
+	<div id="About" class="in dark tabcontent">
         <p>
-            Peter Schmit is a composer and multimedia artist from Lincoln, Nebraska.  He is currently studying Emerging Media Arts, with minors in Music Technology and Computer Science, at the University of Nebraska-Lincoln.
+            Peter Schmit is a composer and multimedia artist from Lincoln, Nebraska.  He is currently studying Emerging Media Arts, with minors in Music Technology and Software Development, at the University of Nebraska-Lincoln.
         </p>
     </div>
+
     <div id="Work" class="in dark tabcontent">
-        <div id="perseverator">  
-            <h2>Perseverator</h2>
-            <img src="media/PERSEVERATOR.jpg" style="width:20%">
-            <p>An experimental, dark ambient/noise EP made in Spring 2024.<br>
-                <a href="https://perseverator.bandcamp.com/">Bandcamp</a> here.</p>
-        </div>
-        <div id="Headbang Hero">
-            <h2>Headbang Hero</h2>
+    	
+		<div id="Civics Scribble">
+	    	<h2>Civics Scribble</h2>
+	    	<p><a href="https://www.linkedin.com/in/caleb-kirilov-14b843183/">Caleb Kirilov</a> and I created the music and sound for Nebraska Public Media's educational line-drawing game, <a href=https://nebraskapublicmedia.org/en/nebraska-public-media-labs/civics-scribble/>Civics Scribble</a>.  
+       
+		<div id="Memorial Stadium Virtual Tour">
+			<h2>Memorial Stadium Virtual Tour</h2>
+			<p>A virtual tour <a href="https://www.linkedin.com/in/kayla-solorzano-54a660121/">Kayla Solorzano</a> and I assembled for <a href="https://nebraskapublicmedia.org/en/nebraska-public-media-labs/">Nebraska Public Media Labs</a>.  We did the bulk of the work in 3DVista Virtual Tour Pro, using a series of panoramic images rendered in Unreal Engine, from a 1:1 scale model of the stadium modeled by <a href="https://www.linkedin.com/in/steven-axorr-kolbe-3071b61/">Steve Kolbe</a> and <a href="https://www.linkedin.com/in/kayla-lapoure/">Kayla LaPoure</a> for the stadium's 100th anniversary.</p>
+			<a href="https://nebraskapublicmedia.org/webxr/memorialstadium/"><p>See it here.<br><img src="media/stadiumTour.png" width=100%></a></p>	
+			</div>
+ 
+		<div id="Headbang Hero">
+        	<h2>Headbang Hero</h2>
             <p>A headtracking-based rhythm game mixed with simple mechatronics, created in Fall 2023.</p>
-            <video width="30%" controls src="media/Headbang Hero.mov"></video>
-            <p>Headtracker created using Arduino with a 9-axis IMU and a 3D-printed headphone mount.  Shoulder creature printed from a LIDAR scan of myself, and controlled with a servo. Music composed in Logic Pro.  Game made with Unity, using the <a href="https://github.com/melanchall/drywetmidi">DryWetMIDI</a> plugin.</p>
+            <video width="60%" controls src="media/Headbang Hero.mov"></video>
+            <p>A head-tracking video game controller created using Arduino with a 9-axis IMU and a 3D-printed headphone mount.  Shoulder creature printed from a LIDAR scan of myself, and controlled with a servo. Music composed in Logic Pro.  Game made with Unity, using the <a href="https://github.com/melanchall/drywetmidi">DryWetMIDI</a> plugin.</p>
         </div>
-        <div id="bicycle">
+        
+		<div id="bicycle">
             <h2>bicycle</h2>
             <p>An installation at EMA Open Studios in Spring 2023.</p>
-            <video width="15%" controls src="media/bikeVideo1.mov"></video>
-            <video width="15%" controls src="media/bikeVideo2.mov"></video>
+            <video width="40%" controls src="media/bikeVideo1.mov"></video>
+            <video width="40%" controls src="media/bikeVideo2.mov"></video>
             <p>An interactive installation combining physical elements, video projection, and music.  Audiences control the playback speed and direction of an ambient music piece using bike pedals and a potentiometer, respectively.</p>
             <p>I created the ambient music (listen below) in Logic Pro using a seven-string guitar in an altered tuning.  I filmed the footage in my backyard, and programmed the interactions in the Arduino IDE and p5.js.</p>
             <audio controls src="media/bicycleAudio.wav"></audio>
         </div>
-    </div>
-    <div id="Contact" class="in dark tabcontent">
+	</div>
+ 
+	<div id="Contact" class="in dark tabcontent">
         <p>Email: <a href="mailto:peternschmit@gmail.com">peternschmit@gmail.com</a></p>
         <p>LinkedIn <a href="http://www.linkedin.com/in/peter-schmit-745205309">here</a>.</p>
     </div>
+
+</div>
+       
 </body>
 
 <!--on page load, display "About" tab-->
